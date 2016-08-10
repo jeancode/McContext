@@ -1,0 +1,43 @@
+<html>
+
+<head>
+	<title>MousePress</title>
+	<script src="jquery-3.1.0.min.js"></script>
+	<script src="mcContext.js"></script>
+	<style>
+		.item-menu:hover{
+			background:#23b7e3;
+            -webkit-transition:ease .5s all;
+		}
+	</style>
+	<script>
+	$(document).ready(function(){
+		
+		
+		
+		var menu = [
+			{
+			"nombre":"Nueva Carpeta",
+			"start":function(){alert("Adios")}
+			},
+			{
+			"nombre":"Eliminar",
+			"start":function(){alert("Eliminar")}
+			}
+		
+		];
+		var mc = new Mc("body");
+		mc.MenuContex(menu);
+		
+		
+	
+	
+	});
+	</script>
+</head>
+<body>
+
+  
+
+</body>
+</html>
